@@ -29,11 +29,6 @@ public class ButtonComponent extends Component {
         return browser.isDisabled(button);
     }
 
-    public String getAttribute(String attributeName) {
-        WebElement webElement = browser.getWait().until(presenceOfElementLocated(button));
-        return Objects.requireNonNull(webElement.getDomAttribute(attributeName)).strip();
-    }
-
     public String getText(){
         return browser.getText(button);
     }

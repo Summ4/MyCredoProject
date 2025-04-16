@@ -9,7 +9,7 @@ import static utils.Helper.generateRandomString;
 public class DataProvider_UserData {
 
     String randomString = generateRandomString();
-    private Database database;
+    private final Database database;
 
     public DataProvider_UserData() {
         this.database = new Database(Configuration.DB_HOST, Configuration.DB_USERNAME, Configuration.DB_PASSWORD);

@@ -13,20 +13,20 @@ public class Database extends BaseDb {
         super(dbHost, "IBankUsermanagement", dbUsername, dbPassword);
     }
 
-    private String getActiveUsernameQuery = """
+    private final String getActiveUsernameQuery = """
             SELECT TOP 1 [Login]
               FROM [IBankUsermanagement].[auth].[UserLogins]
               where IsBlocked = 0
               ORDER BY NEWID()
             """;
 
-    private String getBlockedUsernameQuery = """
+    private final String getBlockedUsernameQuery = """
             SELECT TOP 1 [Login]
               FROM [IBankUsermanagement].[auth].[UserLogins]
               where IsBlocked = 1
               ORDER BY NEWID()
             """;
-    private String resetUser = """
+    private final String resetUser = """
                         update a
                         set a.Password  = '+TFStFo+daaj5e1ZL0CjHE2UbQ7D8CNd' , a.Salt = 'Gpz/bYaNXjVmkh22i0mUdrRo0WKgq7WD'
                         from  [IBankUsermanagement].[auth].[UserLogins] as a

@@ -34,11 +34,6 @@ public class LoginPage extends Page {
             togglePassword.click();
     }
 
-    public void makePasswordInvisible() {
-        if (passwordIsVisible())
-            togglePassword.click();
-    }
-
     private boolean passwordIsVisible() {
 
         return passwordInput.getAttribute("type").contains("text");

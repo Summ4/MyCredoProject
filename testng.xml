@@ -3,7 +3,7 @@
 <suite name="Test Suite - My Credo">
     <test name="Login Tests">
         <classes>
-            <class name="LoginPage.LanguageTestFactory"/>
+            <class name="LoginPage.LoginPageTest"/>
         </classes>
     </test>
 </suite>

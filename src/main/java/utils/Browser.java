@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
-import java.util.List;
 import java.util.Objects;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
